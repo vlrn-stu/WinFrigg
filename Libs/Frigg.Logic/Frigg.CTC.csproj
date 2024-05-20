@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    <ItemGroup>
+	    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+	    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.4" />
+	    <PackageReference Include="STH1123.ReedSolomon" Version="2.1.0" />
+	    <PackageReference Include="System.Drawing.Common" Version="8.0.5" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Frigg.Common\Frigg.Common.csproj" />
+      <ProjectReference Include="..\Frigg.Devices.HackRF\Frigg.Devices.HackRF.csproj" />
+      <ProjectReference Include="..\Frigg.Devices\Frigg.Devices.csproj" />
+      <ProjectReference Include="..\Frigg.Model\Frigg.Model.csproj" />
+      <ProjectReference Include="..\Frigg.Python\Frigg.Python.csproj" />
+    </ItemGroup>
+</Project>
